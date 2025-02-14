@@ -1,39 +1,159 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romano's Portfolio</title>
+    <title>Capstone website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <h1> Romano's Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-    <hr/>
-   <p><a href="./public/MovierankingIndex.html"> <h3>Movie Ranking Project</h3></a></p> 
-    <img src="./assets/images/Scherm­afbeelding Moviesranking.png" width="200" height="200" alt="screencapture of the moviesranking project"/>
-    <p><a href="./public/BirthdayIndex.html"> <h3>Birthday Invite Project</h3></a></p>
-    <img src="./assets/images/Scherm­afbeelding cakalele.png" width="250" alt="screencapture of my birthdayinvite project"/>
-    <hr/>
-<a href="./public/about.html" style="display: inline-block; margin-right: 10px;"> <h5> About Me</h5> </a> 
-<a href="./public/contact.html" style="display: inline-block;"> <h5>Contact</h5> </a>
+
+    <div class="bg-dark text-light">
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+                <img src="./pictures/rocket.svg" height="30" alt="brand rocket"> 
+            </a>
+    
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#Home" class="nav-link text-light">Home</a></li>
+                <li class="nav-item"><a href="#Portfolio" class="nav-link text-light">Portfolio</a></li>
+                <li class="nav-item"><a href="#Contact" class="nav-link text-light">Contact</a></li>
+            </ul>
+        </header>
+    </div>
+    </div>
+
+    <div id="Home" class="gradient-background py-5">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="./pictures/picture Romano.png" class="d-block mx-lg-auto img-fluid rounded-5" 
+                         alt="Romano E. Sinay" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6 text-light">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Romano's Digital Playground</h1>
+                    <p class="lead">
+                        Welcome to my personal project! My name is Romano Sinay and this is where I showcase my 
+                        <span class="highlight">front-end development</span> skills.  
+                        From <span class="highlight">responsive layouts</span> to 
+                        <span class="highlight">sleek UI/UX designs</span>.  
+                        Ready to dive in? 🚀
+                    </p>  
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+
+    <section id="Portfolio" class="py-5 text-center container portfolio-section">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h2 class="fw-bold">My Portfolio</h2>
+                <p class="lead text-dark">
+                    A showcase of my <span class="highlight">front-end development</span> journey, featuring both 
+                    <span class="highlight">personal projects</span> and <span class="highlight">assignments</span> from my course.  
+                    Each project reflects the skills I've gained, from <span class="highlight">responsive design</span> to 
+                    <span class="highlight">interactive UI elements</span>.  
+                    Explore my work and see how I've grown as a developer!
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    
+      
+    <div class="album py-1 bg-body-tertiary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3"> <!-- Wijzig hier naar row-cols-md-2 voor 2 kaarten per rij -->
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="./pictures/Flag Laos.png" target="_blank"><img src="./pictures/Flag Laos.png" class="card-img-top zoomable-img" alt="Flag of Laos" width="350" height="300">
+                        </a>
+                        <div class="card-body">
+                            <p class="lead text-dark">This project challenged me to recreate <span class="highlight">The flag of Laos</span> using only HTML and CSS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="./pictures/Mondriaan.png" target="_blank"><img src="./pictures/Mondriaan.png" class="card-img-top zoomable-img" alt="Mondriaan project" width="350" height="300">
+                        </a>
+                        <div class="card-body">
+                            <p class="lead text-dark">In this project, I recreated a famous artwork by <span class="highlight">Mondrian</span> using HTML and CSS Grid.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="./pictures/WeMove website.png" target="_blank"><img src="./pictures/WeMove website.png" class="card-img-top zoomable-img" alt="WeMove Website" width="350" height="300">
+                        </a>
+                        <div class="card-body">
+                            <p class="lead text-dark">This website is for the fictional company <span class="highlight">WeMove</span>, built using free <span class="highlight">Bootstrap</span> templates.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="./pictures/TinDog.png" target="_blank"><img src="./pictures/TinDog.png" class="card-img-top zoomable-img" alt="TinDog project" width="350" height="300">
+                        </a>
+                        <div class="card-body">
+                            <p class="lead text-dark">This is a front-end-only, imaginary app inspired by <span class="highlight">Tinder</span>, but for dogs—hence the name <span class="highlight">"Tindog."</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="Contact" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6"> <!-- Beperkt de breedte op medium en grotere schermen -->
+                <h2 class="text-center mb-4 text-dark">Contact Form</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label text-dark">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label text-dark">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-dark">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label text-dark">Your Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+   <div class="gradient-background"><div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-light">© 2025 R.E. Sinay</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="./pictures/rocket.svg" height="30" alt="Rocket">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#Home" class="nav-link px-2 text-light">Home</a></li>
+            <li class="nav-item"><a href="#Portfolio" class="nav-link px-2 text-light">Portfolio</a></li>
+            <li class="nav-item"><a href="#Contact" class="nav-link px-2 text-light">Contact</a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>  
 
 
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
 </body>
 </html>

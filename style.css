@@ -1,0 +1,74 @@
+/* 🌈 Gradient Achtergrond */
+.gradient-background {
+    background: linear-gradient(300deg, #0a192f, #4c5c96, #00bcd4, #ff4c68);
+    background-size: 200% 200%;
+    animation: gradient-animation 12s ease infinite;
+    color: white; /* Zorgt voor goed contrast */
+    padding-top: 0 !important; /* Verwijdert extra ruimte boven de hero */
+    margin-top: 0 !important;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 🟠 Highlighted tekst */
+.highlight {
+    font-weight: 700;
+}
+
+.portfolio-section {
+    color: black; /* Verandert de tekstkleur naar zwart voor deze sectie */
+}
+
+.portfolio-section .highlight {
+    font-weight: 700; /* Je kunt de highlight ook aanpassen als je dat wilt */
+}
+
+
+
+
+/* 📌 Album sectie */
+.album {
+    background-color: #f8f9fa; /* Lichte grijstint voor een zachte overgang */
+    border: none;
+    box-shadow: none;
+}
+
+/* 📖 Centered tekst in cards */
+.card-text {
+    text-align: center;
+}
+
+/* 🔳 Verwijdert extra ruimte tussen navbar en hero */
+.bg-dark {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* ⚡ Voorkomt extra witruimte bovenaan */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Zoom effect voor de afbeelding */
+.zoomable-img {
+    transition: transform 0.3s ease; /* Maakt de overgang soepel */
+    cursor: pointer; /* Verandert de cursor naar een aanwijzer */
+    position: relative; /* Zorgt ervoor dat we de z-index kunnen gebruiken */
+    z-index: 1; /* Zorgt ervoor dat de afbeelding boven de andere elementen komt */
+}
+
+.zoomable-img:hover {
+    transform: scale(1.2); /* Vergroot de afbeelding */
+    z-index: 10; /* Verhoogt de z-index om het boven andere elementen te plaatsen */
+}
